@@ -1,3 +1,12 @@
+library(odbc)
+library(implyr)
+library(reshape2)
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(arules)
+library(arulesViz)
+
 #Method 1: read as transaction
 pos<-read.transactions("pos_sampledata.csv",format = "single", sep = ",", cols = c("transaction_number", "prod_category"))
 
